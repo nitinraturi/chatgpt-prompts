@@ -1,16 +1,17 @@
 {
-  "manifest_version": 2,
-  "name": "OpenAI Chat Extension",
+  "manifest_version": 3,
+  "name": "ChatGPT Prompts Extension",
   "version": "1.0.0",
-  "description": "Injects a JavaScript file into OpenAI Chat and provides a prompt management modal",
-  "permissions": [
-    "activeTab"
+  "description": "Speed up your search with accuracy using the prompts manager.",
+  "author": "Nitin Raturi (raturi002@gmail.com)",
+  "host_permissions": [
+    "https://chat.openai.com/"
   ],
   "icons": {
-    "16": "icon.png",
-    "32": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "./icon.png",
+    "32": "./icon.png",
+    "48": "./icon.png",
+    "128": "./icon.png"
   },
   "content_scripts": [
     {
@@ -22,8 +23,7 @@
       ],
       "css": [
         "./styles.css"
-      ],
-      "run_at": "document_end"
+      ]
     }
   ]
 }
