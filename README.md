@@ -1,6 +1,8 @@
 # ChatGPT Prompts Extension
 The Custom Prompts Extension is a browser extension that allows you to manage prompts in your browser. With this extension, you can apply prompts to speed up your research.
 
+![Header Image](./header.png)
+
 ## Features
 
 - Prompt for content writing
