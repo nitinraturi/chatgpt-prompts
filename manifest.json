@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "OpenAI Chat Extension",
+  "version": "1.0.0",
+  "description": "Injects a JavaScript file into OpenAI Chat and provides a prompt management modal",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/chat"
+      ],
+      "js": [
+        "./content.js"
+      ],
+      "css": [
+        "./styles.css"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
